@@ -26,3 +26,19 @@ header {
 }
 
 /*# sourceMappingURL=it_styles.css.map */
+
+
+@media (max-width: 1050px) {
+  .courseFullDescription {
+    background: linear-gradient(rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.85) 100%), url(../images/aboutITCourse.svg) no-repeat center right, linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(118, 0, 255, 0.5) 100%);
+  }
+  .courseFullDescription .container {
+    background: none;
+  }
+  .courseProgramm .container {
+    align-items: center;
+  }
+  .courseProgramm .container ul li .themeNumber {
+    width: 100px;
+  }
+}
