@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Extra Learn: Физика</title>
+  <title>Extra Learn: Веб-разработка</title>
 
   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
   <link rel="stylesheet" href="css + sass/styles.css">
   <link rel="stylesheet" href="css + sass/courses.css">
-  <link rel="stylesheet" href="css + sass/phisics_styles.css">
+  <link rel="stylesheet" href="css + sass/it_styles.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
 </head>
 <body>
@@ -42,14 +41,14 @@
   </header>
 
   <main>
-    <section class="courseBanner bannerPhisics">
+    <section class="courseBanner bannerIT">
       <div class="container">
         <div class="blurBG"></div>
-        <p class="courseType">оффлайн-курс</p>
-        <h1>КУРС ПО ФИЗИКЕ</h1>
+        <p class="courseType">онлайн-курс</p>
+        <h1>Курс по веб-разработке</h1>
         <p class="courseShortDescription">
-          Поднятие уровня владения предметом в рамках школьной программы и 
-          работа на её опережение для учеников 5-11 классов.
+          Курс рассчитан на людей возрастом от 16 лет. 
+          Главной целью является научить Вас создавать сайты.
         </p>
         <a href="#singUpForCourse" class="button">Записаться на курс</a>
       </div>
@@ -61,7 +60,7 @@
           <li>
             <img src="./images/wallet@3x.png" alt="Стоимость">
             <h3>Стоимость</h3>
-            <p>120 грн в час</p>
+            <p>2500 грн в месяц</p>
           </li>
           <li>
             <img src="./images/power@3x.png" alt="Старт">
@@ -71,12 +70,12 @@
           <li>
             <img src="./images/calendar@3x.png" alt="График">
             <h3>График</h3>
-            <p>Ср, Пт, Сб</p>
+            <p>Пн, Ср, Пт 17:00 - 19:00</p>
           </li>
           <li>
             <img src="./images/watch@3x.png" alt="Длительность">
-            <h3>Длительность занятия</h3>
-            <p>1,5 - 2 часа</p>
+            <h3>Длительность</h3>
+            <p>3+ месяца</p>
           </li>
         </ul>
       </div>
@@ -84,19 +83,50 @@
 
     <section class="courseFullDescription">
       <div class="container">
-        <h2>О занятиях</h2>
+        <h2>О курсе</h2>
         <ul>
           <li>
-            <p>Занятия проводятся индивидуально в режиме реального времени.</p>
+            <p>Курс проходит онлайн в режиме реального времени.</p>
           </li>
           <li>
-            <p>Первый урок является пробным, на котором выявляются проблемные для понимания темы для их последующего разбора.</p>
+            <p>Много практических заданий с возростающей сложностью.</p>
           </li>
           <li>
-            <p>В связи с этим на первое занятие действует <span>скидка 50%</span>!</p>
+            <p>Важен успех каждого, поэтому курс проходит в формате диалога с возможностью обсуждения сложных моментов и последующим их решением.</p>
           </li>
           <li>
-            <p>В ходе занятий есть возможность подробно разбирать домашние задания, контрольные и самостоятельные работы.</p>
+            <p>Ты освоишь HTML/CSS, JavaScript, React / Redux и научишься создавать веб-страницы любой сложности.</p>
+          </li>
+          <li>
+            <p>После курса у тебя будет портфолио с реальными практичными проектами.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="courseProgramm">
+      <div class="container">
+        <h2>Программа</h2>
+        <ul>
+          <li>
+            <p class="themeNumber">Тема 1</p>
+            <p class="themeName">HTML + CSS</p>
+          </li>
+          <li>
+            <p class="themeNumber">Тема 2</p>
+            <p class="themeName">JavaScript: Basic</p>
+          </li>
+          <li>
+            <p class="themeNumber">Тема 3</p>
+            <p class="themeName">Javascript: Advanced</p>
+          </li>
+          <li>
+            <p class="themeNumber">Тема 4</p>
+            <p class="themeName">React / Redux</p>
+          </li>
+          <li>
+            <p class="themeNumber">Тема 5</p>
+            <p class="themeName">Demo project</p>
           </li>
         </ul>
       </div>
@@ -132,7 +162,7 @@
             <select name="courses" id="courses">
               <option name="Physics" value="Физика">Физика</option>
               <option name="Mathematics" value="Математика">Математика</option>
-              <option name="IT" value="IT">Веб-разработка</option>
+              <option name="IT" value="IT" selected>Веб-разработка</option>
             </select>
           </div>
           <div class="formQuestionsContainer">

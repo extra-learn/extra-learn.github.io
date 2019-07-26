@@ -4,42 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <title>Extra Learn</title>
 
+  <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css + sass/styles.css">
+
+  <script src="https://kit.fontawesome.com/3c8130612b.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
 </head>
 <body>
   <header id="header">
     <div class="container">
+      <span class="menu">
+        <i class="fa-2x fas fa-bars"></i>
+      </span>
       <div class="logoContainer">
-        <a href="#">
-          <img src="./images/header/poly.svg" alt="Logo Extra Learn" class="logo">
+        <a href="index.html">
+          <img src="./images/poly.svg" alt="Logo Extra Learn" class="logo">
           <span>Extra Learn</span>
         </a>
       </div>
-      <nav>
+      <nav class="hide">
         <ul>
-          <li class="coursesList">
-            <img src="./images/header/angle-bottom.svg" alt="List of courses">
-            <span>Курсы</span>
-            <ul>
-              <li><a href="phisics_course.html">Физика</a></li>
-              <li><a href="#">Математика</a></li>
-              <li><a href="#">IT</a></li>
-            </ul>
-          </li>
-          <li class="hoveredNavLink"><a href="#">О нас</a></li>
-          <li class="hoveredNavLink"><a href="#">Цены</a></li>
+          <li class="phisics"><a href="phisics_course.html">Физика</a></li>
+          <li class="mathematics"><a href="mathematics_course.html">Математика</a></li>
+          <li class="it"><a href="it_course.html">Веб-разработка</a></li>
+        </ul>
+        <hr>
+        <ul class="phoneNumbers">
+          <li class="phoneNumber"><a href="tel:+380950549719">095-054-9719</a></li>
+          <li class="phoneNumber"><a href="tel:+380980159261">098-015-9261</a></li>
         </ul>
       </nav>
       <div class="connect">
         <ul>
-          <li class="phoneNumber"><a href="">099-198-5025</a></li>
-          <li class="phoneNumber"><a href="">098-015-9261</a></li>
+          <li class="phoneNumber"><a href="tel:+380950549719">095-054-9719</a></li>
+          <li class="phoneNumber"><a href="tel:+380980159261">098-015-9261</a></li>
         </ul>
-        <a class="registerOnCourse" href="#singUpForCourse">Записаться на курс</a>
+        <a class="registerOnCourse button" href="#singUpForCourse">Записаться на курс</a>
       </div>
     </div>
   </header>
@@ -50,7 +53,7 @@
         <div class="banner__text">
           <h1><span>Не</span> теряй время</h1>
           <p>Поможем поднять Ваш уровень имеющихся знаниях или освоить новые</p>
-          <a href="#courses">Выбрать курс</a>
+          <a href="#courses" class="button">Выбрать курс</a>
         </div>
       </div>
     </section>
@@ -58,12 +61,12 @@
     <section class="description">
       <div class="container">
         <div>
-          <h2>Только самое необходимое</h2>
-          <p>Учим только тому, что реально может понадобиться, в необходимости чего убедились на практике.</p>
-        </div>
-        <div>
           <h2>Принцип 80/20</h2>
           <p>Большая часть учёбы является практической, т.к. это и является главной целью.</p>
+        </div>
+        <div>
+          <h2>Только самое необходимое</h2>
+          <p>Учим только тому, что реально может понадобиться, в необходимости чего убедились на практике.</p>
         </div>
         <div>
           <h2>Гарантия качества</h2>
@@ -73,23 +76,22 @@
     </section>
 
     <section class="courses" id="courses">
+      <h2>Предметы</h2>
       <div class="container">
-        <a href="#">
+        <a href="phisics_course.html">
           <h3 class="courseName">Физика</h3>
-          <p class="shedule">График: Пн-Пт 17:00-19:00</p>
-          <p class="term">Сроки: 3 месяца</p>
+          <p class="shedule">График: Ср, Пт, Сб</p>
           <p class="biginCourse">Дата начала: 20 августа 2019</p>
         </a>
-        <a href="#">
+        <a href="mathematics_course.html">
           <h3 class="courseName">Математика</h3>
-          <p class="shedule">График: Пн-Пт 19:00-21:00</p>
-          <p class="term">Сроки: 3 месяца</p>
+          <p class="shedule">График: Ср, Пт, Сб</p>
           <p class="biginCourse">Дата начала: 20 августа 2019</p>
         </a>
-        <a href="#">
-          <h3 class="courseName">IT</h3>
-          <p class="shedule">График: Пн-Пт 19:00-21:00</p>
-          <p class="term">Сроки: 4 месяца</p>
+        <a href="it_course.html">
+          <h3 class="courseName">Веб-разработка</h3>
+          <p class="shedule">График: Пн, Ср, Пт 17:00-19:00</p>
+          <p class="term">Сроки: 3+ месяца</p>
           <p class="biginCourse">Дата начала: 20 августа 2019</p>
         </a>
       </div>
@@ -125,14 +127,14 @@
             <select name="courses" id="courses">
               <option name="Physics" value="Физика">Физика</option>
               <option name="Mathematics" value="Математика">Математика</option>
-              <option name="IT" value="IT">IT</option>
+              <option name="IT" value="IT">Веб-разработка</option>
             </select>
           </div>
           <div class="formQuestionsContainer">
-            <label class="fieldNameBeforeClick" for="questionField">Есть вопросы? Задавайте!</label>
+            <label class="fieldNameBeforeClick" for="questionField">Есть вопросы?</label>
             <textarea name="questionField" id="questionField" rows="1"></textarea>
           </div>
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </div>
     </section>
@@ -142,26 +144,23 @@
     <div class="container">
       <div class="logoContainer">
         <a href="#">
-          <img src="./images/header/poly.svg" alt="Logo Extra Learn" class="logo">
+          <img src="./images/poly.svg" alt="Logo Extra Learn" class="logo">
           <span>Extra Learn</span>
         </a>
-      </div>
-      <div class="socialLinks">
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
-        <a href=""><img src="" alt=""></a>
       </div>
       <div class="contacts">
         <div class="e-mail">
           <p>e-mail:</p>
-          <a href="#">infoExtraLearn@gmail.com</a>
+          <a href="mailto:infoextralearn@gmail.com">infoExtraLearn@gmail.com</a>
         </div>
-        <div class="phoneNumber">
-          <p>тел:</p>
-          <a href="#">099-198-5025</a>
-        </div>
-        <div class="phoneNumber">
-          <a href="#">098-015-9261</a>
+        <div class="phoneNumbers">
+          <div class="phoneNumber">
+            <p>тел:</p>
+            <a href="tel:+380950549719">095-054-9719</a>
+          </div>
+          <div class="phoneNumber">
+            <a href="tel:+380980159261">098-015-9261</a>
+          </div>
         </div>
       </div>
       <p class="copyright">© Copyright 2019, Extra Learn</p>

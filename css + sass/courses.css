@@ -1,0 +1,206 @@
+.courseBanner {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.courseBanner .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.courseBanner .courseType {
+  font-size: calc(15.4245px + 1.42985vw);
+  margin-top: 35px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.courseBanner h1 {
+  color: #ad6dfc;
+  text-align: center;
+  font-size: calc(22.8418px + 3.36193vw);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.courseBanner .courseShortDescription {
+  text-align: center;
+  max-width: 75%;
+  font-size: calc(16.8561px + 0.357462vw);
+  line-height: 1.3em;
+  font-weight: 700;
+  margin: 0px auto 40px;
+}
+.courseBanner a {
+  font-size: calc(16.8561px + 0.357462vw);
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #7600ff;
+  padding: 15px 27px;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.courceMainMoments .container {
+  display: flex;
+  padding: 70px 0;
+  margin: 0 20px;
+}
+.courceMainMoments .container ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.courceMainMoments .container ul li {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.courceMainMoments .container ul li img {
+  margin-bottom: 20px;
+}
+.courceMainMoments .container ul li h3 {
+  font-size: calc(16.2842px + 0.536193vw);
+  margin-bottom: 15px;
+}
+.courceMainMoments .container ul li p {
+  font-size: calc(12.8561px + 0.357462vw);
+}
+
+.courseFullDescription {
+  background: #c9a9ec;
+}
+.courseFullDescription .container {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0;
+}
+.courseFullDescription .container h2 {
+  font-size: calc(15.4245px + 1.42985vw);
+  color: rgba(118, 0, 255, 0.9);
+  margin-bottom: 40px;
+}
+.courseFullDescription .container ul {
+  list-style: none;
+}
+.courseFullDescription .container ul li {
+  font-size: calc(12.8561px + 0.357462vw);
+  margin-bottom: 30px;
+  width: 50%;
+}
+.courseFullDescription .container ul li:last-child {
+  margin-bottom: 15px;
+}
+
+.courseProgramm .container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.courseProgramm .container h2 {
+  font-size: calc(15.4245px + 1.42985vw);
+  background: linear-gradient(90deg, rgba(118, 0, 255, 0.7) 33%, #7600ff 66%, rgba(118, 0, 255, 0.5));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin-bottom: 40px;
+}
+.courseProgramm .container ul {
+  list-style: none;
+}
+.courseProgramm .container ul li {
+  font-size: calc(12.8561px + 0.357462vw);
+  margin-bottom: 20px;
+  display: flex;
+}
+.courseProgramm .container ul li .themeNumber {
+  width: 15%;
+  font-size: calc(16.8561px + 0.357462vw);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.requirements {
+  background: #F1E5FF;
+}
+.requirements .container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0;
+}
+.requirements .container h2 {
+  font-size: calc(15.4245px + 1.42985vw);
+  background: linear-gradient(90deg, rgba(118, 0, 255, 0.7) 33%, #7600ff 66%, rgba(118, 0, 255, 0.5));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #0B2349;
+  display: table;
+  margin-bottom: 40px;
+}
+.requirements .container ul {
+  list-style: none;
+}
+.requirements .container ul li {
+  font-size: calc(12.8561px + 0.357462vw);
+  margin-bottom: 20px;
+  display: flex;
+}
+.requirements .container ul li .reqName {
+  width: 20%;
+  font-size: calc(16.8561px + 0.357462vw);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.requirements .container ul li .reqs {
+  max-width: 700px;
+}
+
+/*# sourceMappingURL=courses.css.map */
+
+@media (max-width: 1150px) {
+  .courseFullDescription .container {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  .courseFullDescription .container {
+    background: none;
+  }
+  .courseFullDescription .container h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .courseFullDescription .container ul li {
+    width: 100%;
+  }
+}
+
+@media (max-width: 740px) {
+  .courseBanner .courseShortDescription {
+    font-size: calc(14px + 2vw);
+    font-weight: normal;
+  }
+  .courseBanner a {
+    font-size: 14px;
+    padding: 7px 9px;
+  }
+  .courceMainMoments .container ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+}
+
+@media (max-width: 370px) {
+  .courceMainMoments .container ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+}

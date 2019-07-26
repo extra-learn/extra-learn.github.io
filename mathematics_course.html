@@ -4,20 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Extra Learn: Физика</title>
+  <title>Extra Learn: Математика</title>
 
   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
   <link rel="stylesheet" href="css + sass/styles.css">
   <link rel="stylesheet" href="css + sass/courses.css">
-  <link rel="stylesheet" href="css + sass/phisics_styles.css">
+  <link rel="stylesheet" href="css + sass/mathematics_styles.css">
 
+  <script src="https://kit.fontawesome.com/3c8130612b.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   <script src="https://cdn.jsdelivr.net/npm/jquery-form-styler@2.0.2/dist/jquery.formstyler.min.js"></script>
 </head>
 <body>
   <header id="header">
     <div class="container">
+      <span class="menu">
+        <i class="fa-2x fas fa-bars"></i>
+      </span>
       <div class="logoContainer">
         <a href="index.html">
           <img src="./images/poly.svg" alt="Logo Extra Learn" class="logo">
@@ -42,14 +45,14 @@
   </header>
 
   <main>
-    <section class="courseBanner bannerPhisics">
+    <section class="courseBanner bannerMathematics">
       <div class="container">
         <div class="blurBG"></div>
         <p class="courseType">оффлайн-курс</p>
-        <h1>КУРС ПО ФИЗИКЕ</h1>
+        <h1>Курс по математике</h1>
         <p class="courseShortDescription">
-          Поднятие уровня владения предметом в рамках школьной программы и 
-          работа на её опережение для учеников 5-11 классов.
+          Поднятие уровня владения алгеброй и геометрией в рамках школьной программы и 
+          работа на её опережение для учеников 5-11 классов. 
         </p>
         <a href="#singUpForCourse" class="button">Записаться на курс</a>
       </div>
@@ -131,12 +134,12 @@
             <div class="select-arrow-3"></div>
             <select name="courses" id="courses">
               <option name="Physics" value="Физика">Физика</option>
-              <option name="Mathematics" value="Математика">Математика</option>
+              <option name="Mathematics" value="Математика" selected>Математика</option>
               <option name="IT" value="IT">Веб-разработка</option>
             </select>
           </div>
           <div class="formQuestionsContainer">
-            <label class="fieldNameBeforeClick" for="questionField">Есть вопросы? Задавайте!</label>
+            <label class="fieldNameBeforeClick" for="questionField">Есть вопросы?</label>
             <textarea name="questionField" id="questionField" rows="1"></textarea>
           </div>
           <button type="submit">Отправить</button>
